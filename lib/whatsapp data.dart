@@ -7,20 +7,20 @@ class Data {
     2: ['Anu', 'assets/3.png', 'See you tomorrow.', '4:45 PM'],
 
     3: [
-      'Appu'
-          'assets/9.png',
+      'Appu',
+      'assets/9.png',
       'Can u email the pic?'
           '6:30 PM',
     ],
     4: [
-      'malu'
-          'assets/6.png',
+      'malu',
+      'assets/6.png',
       'had dinner yet'
           '6:30 PM',
     ],
     5: [
-      'Ashik'
-          'assets/8.png',
+      'Ashik',
+      'assets/8.png',
       'Hey whatsup bro'
           '6:30 PM',
     ],

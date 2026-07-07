@@ -77,9 +77,9 @@ class ChatTile extends StatelessWidget {
         child: CircleAvatar(radius: 25, backgroundImage: AssetImage(img)),
       ),
 
-      title: Text(name),
-      subtitle: Text(msg),
-      trailing: Text(time),
+      // title: Text(name),
+      // subtitle: Text(msg),
+      // trailing: Text(time),
     );
   }
 }
