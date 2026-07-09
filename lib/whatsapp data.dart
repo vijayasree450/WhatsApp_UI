@@ -26,4 +26,18 @@ class Data {
 
     12: ['Arun', 'assets/15.png', "See you tomorrow.", '4:00 PM'],
   };
+
+  var statusList = {
+    0: ['Rahul', 'image/2.png', 3.0, 4.5, '1 minute ago', false],
+    1: ['Mom,image/1.png', 4.0, 2.0, '2 minute ago', false],
+
+    8: ['Mom,image/5.png', 4.0, 2.0, '2 minute ago', false],
+
+    2: ['Mom,image/3.png', 1.0, 3.0, '4 minute ago', false],
+    3: ['dad,image/7.png', 6.0, 7.0, '3 minute ago', false],
+    4: ['krish,image/15.png', 4.0, 2.0, '6 minute ago', false],
+    5: ['cechi,image/13.png', 2.0, 1.0, '2 minute ago', false],
+    6: ['Appu,image/12.png', 4.0, 2.0, '9 minute ago', false],
+    7: ['Malu,image/1.png', 2.0, 3.5, '5 minute ago', false],
+  };
 }
