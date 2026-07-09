@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
+import 'package:whatsapp_ui/components/divider.dart';
 import 'package:whatsapp_ui/whatsapp_data.dart';
 
 Data data = Data();
@@ -31,9 +32,29 @@ class StatusTile extends StatelessWidget {
                 backgroundImage: AssetImage(status[1] as String),
               ),
             ),
+            title: Text(
+              status[0] as String,
+              style: const TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            subtitle: Text(
+              status[4] as String,
+              style: const TextStyle(
+                color: Colors.grey,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
           );
         },
-        separatorBuilder: (context, index) => const Divider(),
+        separatorBuilder: (context, index) {
+          final status = data.statusList[index]!;
+
+          return (status[5] as bool)
+              ? const SizedBox(height: 20)
+              : const Separated();
+        },
       ),
     );
   }

@@ -21,7 +21,6 @@ class Chatscreen extends StatelessWidget {
         automaticallyImplyLeading: false,
         backgroundColor: Colors.green,
         title: const Text("WhatsApp", style: TextStyle(color: Colors.white)),
-
         actions: [
           IconButton(
             icon: const Icon(Icons.search, color: Colors.white),
@@ -43,7 +42,6 @@ class Chatscreen extends StatelessWidget {
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(50),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               WhatsappTabs(label: 'CHATS', fn: () {}),
 
