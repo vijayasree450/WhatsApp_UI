@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'package:whatsapp_ui/components/divider.dart';
-import 'package:whatsapp_ui/screens/callscreens.dart';
+import 'package:whatsapp_ui/components/wa_tab.dart';
 import 'package:whatsapp_ui/screens/statusscreen.dart';
 import 'package:whatsapp_ui/whatsapp_data.dart';
 import 'package:whatsapp_ui/components/chat_tile.dart';
@@ -43,60 +43,17 @@ class Chatscreen extends StatelessWidget {
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(50),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Expanded(
-                child: InkWell(
-                  onTap: () {},
-                  child: Container(
-                    height: 50,
-                    alignment: Alignment.center,
-                    decoration: const BoxDecoration(
-                      border: Border(
-                        bottom: BorderSide(color: Colors.white, width: 3),
-                      ),
-                    ),
-                    child: const Text(
-                      "CHATS",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
+              WhatsappTabs(label: 'CHATS', fn: () {}),
 
-              Expanded(
-                child: InkWell(
-                  onTap: () {
-                    Navigator.pushNamed(context, Statusscreen.id);
-                  },
-                  child: Container(
-                    height: 50,
-                    alignment: Alignment.center,
-                    child: const Text(
-                      "STATUS",
-                      style: TextStyle(color: Colors.white70),
-                    ),
-                  ),
-                ),
+              WhatsappTabs(
+                label: 'STATUS',
+                fn: () {
+                  Navigator.pushNamed(context, Statusscreen.id);
+                },
               ),
-
-              Expanded(
-                child: InkWell(
-                  onTap: () {
-                    Navigator.pushNamed(context, Callscreens.id);
-                  },
-                  child: Container(
-                    height: 50,
-                    alignment: Alignment.center,
-                    child: const Text(
-                      "CALLS",
-                      style: TextStyle(color: Colors.white70),
-                    ),
-                  ),
-                ),
-              ),
+              WhatsappTabs(label: 'CALLS', fn: () {}),
             ],
           ),
         ),
