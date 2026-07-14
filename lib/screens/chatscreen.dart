@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:whatsapp_ui/components/chatTile.dart';
+
 import 'package:whatsapp_ui/components/divider.dart';
 import 'package:whatsapp_ui/screens/callscreens.dart';
 import 'package:whatsapp_ui/screens/statusscreen.dart';
-import 'package:whatsapp_ui/whatsapp data.dart';
+import 'package:whatsapp_ui/whatsapp_data.dart';
+import 'package:whatsapp_ui/components/chat_tile.dart';
 
 Data data = Data();
 
@@ -117,7 +118,7 @@ class Chatscreen extends StatelessWidget {
             time: data.chat.values.elementAt(index)[3],
           );
         },
-        separatorBuilder: (context, index) => separated(),
+        separatorBuilder: (context, index) => Separated(),
       ),
     );
   }

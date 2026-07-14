@@ -17,15 +17,10 @@ class ChatTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: CircleAvatar(radius: 28, backgroundImage: AssetImage(img)),
-
-      minVerticalPadding: 0,
-      horizontalTitleGap: 5,
-
+      leading: CircleAvatar(radius: 25, backgroundImage: AssetImage(img)),
       title: Text(name),
       subtitle: Text(msg),
       trailing: Text(time),
-      onTap: () {},
     );
   }
 }
